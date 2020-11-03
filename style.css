@@ -1,4 +1,4 @@
-header{
+header {
   display: flex;
   justify-content: space-around;
   height: 50px;
@@ -7,10 +7,11 @@ header{
   margin-bottom: 20px;
 }
 
-.logo{
-  width: 45px;  
+.logo {
+  width: 45px;
 }
-nav{
+
+nav {
   display: flex;
   justify-content: space-evenly;
   width: 50%;
@@ -22,165 +23,176 @@ nav * {
 }
 
 nav *:hover {
- background-color: transparent;
+  background-color: transparent;
 }
 
-.search{
+.search {
   height: 30px;
 }
 
-.fa-search{
+.fa-search {
   position: relative;
   right: 30px;
-  top:1px;
+  top: 1px;
 }
 
-.icon{
+.icon {
   display: none;
 }
-main{
+
+main {
   display: flex;
 }
 
-main section{
+main section {
   width: 100%;
 }
 
-main .art1{
+main .art1 {
   display: grid;
   gap: 6px;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
-main .art1 *{
+main .art1 * {
   font-size: 15px;
   line-height: 1.5;
   padding: 7%;
- background-color: rgba(84, 84, 117, 0.288);
- border-radius: 5px;
+  background-color: rgba(84, 84, 117, 0.288);
+  border-radius: 5px;
 }
 
-main .art2{
+main .art2 {
   gap: 20px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin: 10%;
   box-sizing: border-box;
 }
 
-
- main .art2 > *{
+main .art2 > * {
   display: flex;
   flex-direction: column;
   align-self: center;
   background-color: rgba(139, 77, 55, 0.452);
   text-align: center;
   border-radius: 23px;
- }
-.img img{
+}
+
+aside img {
+  margin: 50px 0 3px 0;
+  width: 100%;
+}
+
+.img img {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   padding: 23px;
 }
-main .art3{
+
+main .art3 {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   row-gap: 5px;
   margin: 5% 0;
   box-sizing: border-box;
 }
 
-main .art3 *{
+main .art3 * {
   align-items: center;
   justify-self: center;
-  
- }
+}
 
-aside{
+aside {
   padding: 2%;
   width: 100px;
   text-align: center;
 }
-aside img{
-  margin: 50px 0 3px 0;
-  width: 100%;
-}
 
-
-footer{
+footer {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   text-align: center;
 }
-a{
+
+a {
   text-decoration: none;
 }
-ul{
+
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-@media (max-width: 1023px){
-  main .art1{
-    grid-template-columns: repeat(2,1fr);
+@media (max-width: 1023px) {
+  main .art1 {
+    grid-template-columns: repeat(2, 1fr);
   }
-  aside{
+
+  aside {
     width: 120px;
-   }
+  }
 }
 
-@media (max-width: 768px){
-  main .art1{
+@media (max-width: 768px) {
+  main .art1 {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
-  main .art2{
+
+  main .art2 {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
-  main{
+
+  main {
     flex-direction: column;
   }
-  aside{
+
+  aside {
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     width: 100%;
   }
-  aside img{
+
+  aside img {
     width: 25%;
-    
   }
 }
 
-@media (max-width: 600px){
-  nav{
+@media (max-width: 600px) {
+  nav {
     display: none;
   }
-  .icon{
+
+  .icon {
     display: initial;
   }
-  main .art1{
-    grid-template-columns: repeat(1,1fr);
+
+  main .art1 {
+    grid-template-columns: repeat(1, 1fr);
   }
-  main .art2{
+
+  main .art2 {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
-  main .art3{
+
+  main .art3 {
     grid-template-columns: 1fr;
   }
-  
-  aside{
+
+  aside {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  footer{
-    grid-template-columns: repeat(3,1fr);
+
+  footer {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
 }
